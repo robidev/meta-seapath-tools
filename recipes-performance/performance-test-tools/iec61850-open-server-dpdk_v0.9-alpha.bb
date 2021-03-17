@@ -11,7 +11,7 @@ LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 SRC_URI = "git://github.com/robidev/iec61850_open_server.git;protocol=https;branch=dpdk"
-SRCREV = "6aa28fbb6662f3b176f2e87d1035a4173aec6829"
+SRCREV = "dacd72ee45eb7d42de5007087bbb39dd6f86235b"
 
 DEPENDS = "libiec61850-dpdk"
 RDEPENDS_${PN} = "libiec61850-dpdk" 
