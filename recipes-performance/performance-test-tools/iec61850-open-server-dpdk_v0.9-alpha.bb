@@ -13,7 +13,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 SRC_URI = "git://github.com/robidev/iec61850_open_server.git;protocol=https;branch=dpdk"
 SRCREV = "dacd72ee45eb7d42de5007087bbb39dd6f86235b"
 
-DEPENDS = "libiec61850-dpdk"
+DEPENDS = "libiec61850 libiec61850-dpdk dpdk numactl"
 RDEPENDS_${PN} = "libiec61850-dpdk" 
 
 S = "${WORKDIR}/git"
@@ -23,6 +23,6 @@ inherit cmake
 _installdir = "/opt"
 
 EXTRA_OECMAKE += "-DCMAKE_INSTALL_PREFIX=${_installdir}"
-FILES_${PN} = "${_installdir}/iec61850-open-server-dpdk/" 
+FILES_${PN} = "${_installdir}/iec61850_open_server-dpdk/" 
 
 
