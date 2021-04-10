@@ -5,7 +5,7 @@ LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 SRC_URI = "git://github.com/robidev/libiec61850.git;branch=dpdk"
-SRCREV = "bf5530471ca909a368982d1f51f40c6595f7523f"
+SRCREV = "3a40b916d4d28a96a51afa9e86910e1966aad76d"
 
 DEPENDS = "libpthread-stubs dpdk numactl"
 
